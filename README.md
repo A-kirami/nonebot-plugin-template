@@ -6,8 +6,6 @@
 
 <div align="center">
 
----
-
 # nonebot-plugin-example
 
 _✨ NoneBot 插件简单描述 ✨_
@@ -23,17 +21,81 @@ _✨ NoneBot 插件简单描述 ✨_
 
 </div>
 
-这是一个nonebot插件项目的模板库, 你可以直接使用本模板创建你的nonebot插件项目的仓库
+这是一个 nonebot2 插件项目的模板库, 你可以直接使用本模板创建你的 nonebot2 插件项目的仓库
+
+模板库使用方法:
+1. 点击仓库中的 "Use this template" 按钮, 输入仓库名与描述, 点击 "  Create repository from template" 创建仓库
+2. 在创建好的新仓库中, 在 "Add file" 菜单中选择 "Create new file", 在新文件名处输入`LICENSE`, 此时在右侧会出现一个 "Choose a license template" 按钮, 点击此按钮选择开源协议模板, 然后在最下方提交新文件到主分支
+3. 将 license 徽标的图片链接中的 owner 改为仓库所有者, nonebot-plugin-example 改为插件仓库名; 将 pypi 徽标的跳转链接和图片链接中的 nonebot-plugin-example 修改为你的插件在 pypi 中的名称; 修改 python 徽标中的版本为你插件的运行所需版本
+4. 修改 README 中的插件名和插件描述, 并在下方填充相应的内容
 
 ## 💿 安装
 
-此处应有插件的安装步骤
+<details>
+<summary>使用 nb-cli 安装</summary>
+在 nonebot2 项目的根目录下打开命令行, 输入以下指令即可安装
+
+    nb plugin install nonebot-plugin-example
+
+</details>
+
+<details>
+<summary>使用包管理器安装</summary>
+在 nonebot2 项目的插件目录下, 打开命令行, 根据你使用的包管理器, 输入相应的安装命令
+
+<details>
+<summary>pip</summary>
+
+    pip install nonebot-plugin-example
+</details>
+<details>
+<summary>pdm</summary>
+
+    pdm add nonebot-plugin-example
+</details>
+<details>
+<summary>poetry</summary>
+
+    poetry add nonebot-plugin-example
+</details>
+<details>
+<summary>conda</summary>
+
+    conda install nonebot-plugin-example
+</details>
+
+打开 nonebot2 项目的 `bot.py` 文件, 在其中写入
+
+    nonebot.load_plugin('nonebot-plugin-example')
+
+</details>
+
+<details>
+<summary>从 github 安装</summary>
+在 nonebot2 项目的插件目录下, 打开命令行, 输入以下命令克隆此储存库
+
+    git clone https://github.com/owner/nonebot-plugin-example.git
+
+打开 nonebot2 项目的 `bot.py` 文件, 在其中写入
+
+    nonebot.load_plugin('src.plugins.nonebot-plugin-example')
+
+</details>
 
 ## ⚙️ 配置
 
-此处应有插件的配置项
+在 nonebot2 项目的`.env`文件中添加下表中的必填配置
+
+| 配置项 | 必填 | 默认值 | 说明 |
+|:-----:|:----:|:----:|:----:|
+| 配置项1 | 是 | 无 | 配置说明 |
+| 配置项2 | 否 | 无 | 配置说明 |
 
 ## 🎉 使用
-
-此处应有插件的使用方法
-
+### 指令表
+| 指令 | 权限 | 需要@ | 范围 | 说明 |
+|:-----:|:----:|:----:|:----:|:----:|
+| 指令1 | 主人 | 否 | 私聊 |配置说明 |
+| 指令2 | 群员 | 是 | 群聊 |配置说明 |
+### 效果图
+如果有效果图的话
