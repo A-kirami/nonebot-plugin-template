@@ -29,6 +29,10 @@ _✨ NoneBot 插件简单描述 ✨_
 3. 全局替换`owner`为仓库所有者ID; 全局替换`nonebot-plugin-example`为插件名; 全局替换`nonebot_plugin_example`为包名; 修改 python 徽标中的版本为你插件的运行所需版本
 4. 修改 README 中的插件名和插件描述, 并在下方填充相应的内容
 
+## 📖 介绍
+
+这里是插件的详细介绍部分
+
 ## 💿 安装
 
 <details>
