@@ -74,18 +74,6 @@ _✨ NoneBot 插件简单描述 ✨_
 
 </details>
 
-<details>
-<summary>从 github 安装</summary>
-在 nonebot2 项目的插件目录下, 打开命令行, 输入以下命令克隆此储存库
-
-    git clone https://github.com/owner/nonebot-plugin-example.git
-
-打开 nonebot2 项目的 `bot.py` 文件, 在其中写入
-
-    nonebot.load_plugin('src.plugins.nonebot_plugin_example')
-
-</details>
-
 ## ⚙️ 配置
 
 在 nonebot2 项目的`.env`文件中添加下表中的必填配置
