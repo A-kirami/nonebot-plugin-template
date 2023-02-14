@@ -68,9 +68,9 @@ _✨ NoneBot 插件简单描述 ✨_
     conda install nonebot-plugin-example
 </details>
 
-打开 nonebot2 项目的 `bot.py` 文件, 在其中写入
+打开 nonebot2 项目根目录下的 `pyproject.toml` 文件, 在 `[tool.nonebot]` 部分追加写入
 
-    nonebot.load_plugin('nonebot_plugin_example')
+    plugins = ["nonebot_plugin_example"]
 
 </details>
 
