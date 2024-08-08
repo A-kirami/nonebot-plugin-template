@@ -23,9 +23,6 @@ _✨ NoneBot 插件简单描述 ✨_
 
 这是一个 nonebot2 插件项目的模板库, 你可以直接使用本模板创建你的 nonebot2 插件项目的仓库
 
-> [!NOTE]
-> 模板库中自带了一个发布工作流, 你可以使用此工作流自动发布你的插件到 pypi
-
 <details open>
 <summary>模板库使用方法</summary>
 
@@ -36,8 +33,8 @@ _✨ NoneBot 插件简单描述 ✨_
 
 </details>
 
-> [!IMPORTANT]
-> 这个发布工作流需要 pyproject.toml 文件, 并且只支持 [PEP 621](https://peps.python.org/pep-0621/) 标准的 pyproject.toml 文件
+> [!NOTE]
+> 模板库中自带了一个发布工作流, 你可以使用此工作流自动发布你的插件到 pypi
 
 <details>
 <summary>配置发布工作流</summary>
@@ -47,6 +44,9 @@ _✨ NoneBot 插件简单描述 ✨_
 3. 点击 New repository secret 按钮，创建一个名为 `PYPI_API_TOKEN` 的新令牌，并从第一步复制粘贴令牌。
 
 </details>
+
+> [!IMPORTANT]
+> 这个发布工作流需要 pyproject.toml 文件, 并且只支持 [PEP 621](https://peps.python.org/pep-0621/) 标准的 pyproject.toml 文件
 
 <details>
 <summary>触发发布工作流</summary>
